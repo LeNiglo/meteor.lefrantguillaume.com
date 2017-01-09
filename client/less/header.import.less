@@ -1,0 +1,123 @@
+/**
+*	Style for navbar, header, footer
+*/
+
+header {
+
+	width: 100%;
+	min-height: 200px;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: @spaceBlueColor;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/header-background.jpg);
+
+	#header-wrapper {
+		position: absolute;
+		top: 40vh;
+		width: 100%;
+	}
+
+	.header-text {
+		color: #fff;
+		font-size: 4.2em;
+		font-family: 'Ubuntu-L';
+		small {
+			color: #ccc;
+		}
+	}
+
+	#header-scroll {
+		position: absolute;
+		top: 100vh;
+		margin-top: -80px;
+		width: 100%;
+
+		p#header-scroll-wow {
+			padding: 25px;
+
+			-webkit-animation: none;
+			-moz-animation: none;
+			-o-animation: none;
+			animation: none;
+			&:hover {
+				-webkit-animation: bounce 1.2s infinite;
+				-moz-animation: bounce 1.2s infinite;
+				-o-animation: bounce 1.2s infinite;
+				animation: bounce 1.2s infinite;
+			}
+
+			a {
+				color: white;
+				font-size: 36px;
+			}
+		}
+	}
+
+	#particles-js {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+nav.navbar {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	border-radius: 0;
+	z-index: 90;
+	opacity: 0;
+	background-color: @spaceBlueColor;
+	border: none;
+
+	.dropdown-menu {
+		background-color: @spaceBlueColor;
+	}
+
+	&.navbar-default .navbar-nav > .open > a,
+	.dropdown-menu li > a,
+	&.navbar-default .navbar-brand,
+	.navbar-nav > li > a {
+		background: none;
+		background-color: transparent;
+		color: white;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: darken(white, 20%);
+		}
+	}
+
+	&.affix-top {
+		opacity: 0;
+		.transition(opacity, 250ms);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&.affix {
+		position: fixed;
+		opacity: 1;
+		top: 0;
+		.transition(opacity, 500ms);
+	}
+}
+
+footer {
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 200px;
+	background-color: @spaceBlueColor;
+}

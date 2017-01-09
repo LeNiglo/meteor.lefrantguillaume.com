@@ -1,0 +1,80 @@
+/**
+*	LESS declarations go here
+*/
+
+@import "less/_variables.import.less";
+@import "less/_mixins.import.less";
+
+@font-face {
+	font-family: 'Ubuntu-L';
+	src: url('/Ubuntu-L.ttf') format('truetype');
+}
+
+@import "less/loading_button.import.less";
+@import "less/header.import.less";
+@import "less/section_social.import.less";
+@import "less/section_details.import.less";
+@import "less/section_skills.import.less";
+@import "less/section_contact.import.less";
+
+// Default Section styles
+section,
+footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	min-height: 200px;
+}
+
+// Spacer
+.spacer {
+	clear: both;
+	margin: 7px 0;
+	display: table;
+	content: " ";
+	width: 100%;
+}
+
+// Destrop that stupid bootstrap outline
+a:focus,
+input[type="submit"]:focus,
+button:focus {
+	outline: none !important;
+}
+
+// Destroy that stupid bootstrap border-radius
+.btn,
+input,
+textarea {
+	border-radius: 0 !important;
+}
+
+// Inner Addons
+.inner-addon {
+	position: relative;
+}
+
+.inner-addon .glyphicon,
+.inner-addon .fa {
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
+}
+
+.left-addon .glyphicon,
+.left-addon .fa {
+	left:  0px;
+}
+
+.right-addon .glyphicon,
+.right-addon .fa {
+	right: 0px;
+}
+
+.left-addon input,
+.left-addon textarea {
+	padding-left:  44px !important;
+}
+.right-addon input,
+.right-addon textarea {
+	padding-right: 44px !important;
+}

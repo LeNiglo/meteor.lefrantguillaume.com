@@ -1,0 +1,29 @@
+/**
+*	Style for Section Social
+*/
+
+section#section-social {
+	background-color: @spaceBlueAltColor;
+
+	padding: 50px 15px;
+
+	.social-title {
+		font-family: 'Ubuntu-L';
+		color: @spaceBlueColor;
+		margin-bottom: 25px;
+	}
+
+	a.social-link {
+		img {
+			filter: brightness(50%) grayscale(100%) saturate(80%);
+			.transition(filter, 1.5s);
+		}
+
+		&:hover {
+			img {
+				filter: brightness(100%) grayscale(0%) saturate(120%);
+			}
+		}
+
+	}
+}

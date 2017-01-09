@@ -1,0 +1,46 @@
+/**
+*	LESS mixins
+*/
+
+.placeholder(@rules) {
+	&::placeholder {
+		@rules();
+	}
+	&::-webkit-input-placeholder {
+		@rules();
+	}
+	&:-moz-placeholder {
+		@rules();
+	}
+	&::-moz-placeholder {
+		@rules();
+	}
+	&:-ms-input-placeholder {
+		@rules();
+	}
+}
+
+.placeholderShown(@rules) {
+	&:placeholder-shown {
+		@rules();
+	}
+	&:-webkit-input-placeholder-shown {
+		@rules();
+	}
+	&:-moz-placeholder-shown {
+		@rules();
+	}
+	&:-moz-placeholder-shown {
+		@rules();
+	}
+	&:-ms-input-placeholder-shown {
+		@rules();
+	}
+}
+
+.transition(@property, @duration, @timing: ease-out) {
+	-webkit-transition : @property @duration @timing;
+	-moz-transition : @property @duration @timing;
+	-o-transition : @property @duration @timing;
+	transition : @property @duration @timing;
+}

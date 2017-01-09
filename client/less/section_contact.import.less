@@ -1,0 +1,54 @@
+/**
+*	Style for Section Contact
+*/
+
+section#section-contact {
+	background-color: #fafafa;
+
+	.contact-title {
+		font-family: 'Ubuntu-L';
+		color: @inputColor;
+		margin-bottom: 25px;
+	}
+
+	div.form-group {
+		margin-bottom: 0;
+	}
+
+	div.form-group:first-child {
+		input,
+		textarea {
+			border-top: 1px solid;
+		}
+	}
+
+	input {
+		padding: 35px 12px;
+	}
+
+	textarea {
+		padding: 22px 12px;
+	}
+
+	input,
+	textarea {
+		border: 0;
+		background: none;
+		box-shadow: none;
+		resize: none;
+		border-bottom: 1px solid;
+		border-color: @inputColor;
+		color: @inputColor;
+		font-size: @contactFontSize;
+		.transition(border-color, 300ms);
+
+		.placeholder({ color: @inputAltColor; font-size: @contactFontSize; });
+		.placeholderShown({ border-color: @inputAltColor !important; });
+	}
+
+	.inner-addon .glyphicon,
+	.inner-addon .fa {
+		padding: 27px 12px;
+		font-size: @contactFontSize;
+	}
+}

@@ -1,0 +1,14 @@
+<head>
+	<title>Guillaume Lefrant // Freelance</title>
+	<meta name="author" content="Guillaume Lefrant" />
+</head>
+
+<body>
+	{{#if or isPhone isTablet}}
+		{{> mobile_application}}
+	{{/if}}
+	
+	{{#if or isDesktop isBot}}
+		{{> desktop_application}}
+	{{/if}}
+</body>

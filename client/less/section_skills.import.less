@@ -1,0 +1,33 @@
+/**
+*	Style for Section Skills
+*/
+
+section#section-skills {
+	background-color: @spaceBlueColor;
+
+	.skills-title {
+		font-family: 'Ubuntu-L';
+		color: @inputLightColor;
+		margin-bottom: 25px;
+	}
+
+	.skill-item {
+		text-align: center;
+
+		.fa-stack {
+			position: initial;
+			display: block;
+		}
+
+		h3 {
+
+			color: @inputLightColor;
+
+			small {
+				color: darken(@inputLightColor, 25%);
+				padding-top: 7px;
+				display: block;
+			}
+		}
+	}
+}

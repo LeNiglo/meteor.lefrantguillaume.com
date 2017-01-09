@@ -1,0 +1,84 @@
+<template name="header">
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" data-scroll href="#top" tabindex="-1">
+					<i class="fa fa-arrow-up" aria-hidden="true"></i>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a data-scroll href="#" tabindex="-1">sec1</a>
+					</li>
+					<li>
+						<a data-scroll href="#" tabindex="-1">sec2</a>
+					</li>
+					<li>
+						<a data-scroll href="#section-contact" tabindex="-1">{{_ 'contact_title'}}</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+							{{_ 'lang'}}
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" class="update-lang" data-lang="fr" tabindex="-1">
+									<span class="flag-icon flag-icon-fr pull-right" aria-hidden="true"></span>
+									{{_ 'french'}}
+								</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#" class="update-lang" data-lang="en" tabindex="-1">
+									<span class="flag-icon flag-icon-gb pull-right" aria-hidden="true"></span>
+									{{_ 'english'}}
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- HEADER -->
+	<header id="top">
+		<div id="particles-js"></div>
+		<div id="header-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="header-text text-center wow bounceInDown">
+							{{_ 'me'}}
+							<br />
+							<small>{{_ 'me_subtitle'}}</small>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="header-scroll">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<p id="header-scroll-wow" class="text-center wow bounce" data-wow-delay="0.5s">
+							<a class="spacer" data-scroll href="#section-contact" tabindex="-1">
+								<i class="fa fa-arrow-down" aria-hidden="true"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</template>

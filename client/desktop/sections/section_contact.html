@@ -1,0 +1,56 @@
+<template name="section_contact">
+	<section id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					<h1 class="contact-title text-center">
+						{{_ 'contact_title'}}
+						<span class="pull-right wow bounceInRight">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						</span>
+					</h1>
+				</div>
+
+				<form id="form-contact" autocomplete="off">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<div class="form-group">
+							<label for="contact-name" class="hidden">{{_ 'contact_name'}}</label>
+							<div class="inner-addon right-addon">
+								<i class="fa fa-address-card-o wow bounceInRight" data-wow-delay="0.1s" aria-hidden="true"></i>
+								<input type="text" class="form-control" name="name" id="contact-name" value="" placeholder="{{_ 'contact_name'}}" required="required" autocomplete="on" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-email" class="hidden">{{_ 'contact_email'}}</label>
+							<div class="inner-addon right-addon">
+								<i class="fa fa-at wow bounceInRight" data-wow-delay="0.2s" aria-hidden="true"></i>
+								<input type="email" class="form-control" name="email" id="contact-email" value="" placeholder="{{_ 'contact_email'}}" required="required" autocomplete="on" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-content" class="hidden">{{_ 'contact_content'}}</label>
+							<div class="inner-addon right-addon">
+								<i class="fa fa-comments-o wow bounceInRight" data-wow-delay="0.3s" aria-hidden="true"></i>
+								<textarea type="text" class="form-control" name="content" id="contact-content" value="" placeholder="{{_ 'contact_content'}}" required="required" rows="5"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+						<div class="spacer"></div>
+						<p id="contact-success" class="lead text-success text-center hidden">{{_ 'contact_success'}}</p>
+						<p id="contact-fail" class="lead text-danger text-center hidden">{{_ 'contact_fail'}}</p>
+					</div>
+
+					<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<button type="submit" class="btn btn-lg btn-block btn-default">
+							{{_ 'contact_submit'}}
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</template>

@@ -1,0 +1,48 @@
+/**
+*	Style for Section Details
+*/
+
+section#section-details {
+	background-color: @inputLightColor;
+
+	.details-title {
+		font-family: 'Ubuntu-L';
+		color: darken(@inputColor, 15%);
+		margin-bottom: 25px;
+	}
+
+	dl {
+
+		dt {
+			color: @inputColor;
+			font-size: @detailsFontSize;
+			font-weight: normal;
+			line-height: 1.4em;
+		}
+
+		dd {
+			font-size: @detailsFontSize * 1.1;
+		}
+	}
+
+
+	.text-left {
+		dl {
+			dd {
+				padding-left: 15px;
+			}
+		}
+	}
+
+	.text-right {
+		dl {
+			dd {
+				padding-right: 15px;
+			}
+		}
+	}
+
+	a {
+		color: darken(@inputColor, 15%);
+	}
+}
