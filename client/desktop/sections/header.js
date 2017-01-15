@@ -1,6 +1,7 @@
 import { Tracker } from 'meteor/tracker';
 import { Template } from 'meteor/templating';
 import { Session } from 'meteor/session';
+import { TAPi18n } from 'meteor/tap:i18n';
 
 Template.header.rendered = () => {
 	// WOW
@@ -20,19 +21,27 @@ Template.header.rendered = () => {
 	// smoothScroll
 	Tracker.autorun(() => {
 		if (smoothScroll) {
-			// TODO add navbar offset
 			smoothScroll.init({
-				updateURL: false
+				updateURL: false,
+				offset: 50
 			});
 		}
 	});
 };
 
-Template.header.events({
-	'click .update-lang': (event) => {
+Template.update_lang.created = () => {
+	var tpl = Template.instance();
+	Tracker.autorun(() => {
+		tpl.supportedLangs = Object.keys(TAPi18n.getLanguages());
+	});
+};
+
+Template.update_lang.events({
+	'click .update-lang': (event, tpl) => {
 		event.preventDefault();
-		var lang = $(event.target).data('lang');
-		// TODO check that lang is in ['fr', 'en']
-		Session.set('userLanguage', lang);
+		var requestedLang = $(event.target).data('lang');
+		if ($.inArray(requestedLang, tpl.supportedLangs) >= 0) {
+			Session.set('userLanguage', requestedLang);
+		}
 	}
 })

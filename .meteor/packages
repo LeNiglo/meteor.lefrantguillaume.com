@@ -22,7 +22,6 @@ autopublish@1.0.7             # Publish all data to the clients (for prototyping
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 mystor:device-detection
 shake:shake
-twbs:bootstrap
 less@2.7.8
 newswim:particles
 timmyg:wow
@@ -33,3 +32,4 @@ jss:flag-icon
 slam310:smooth-scroll
 email@1.1.18
 check@1.2.4
+huttonr:bootstrap3

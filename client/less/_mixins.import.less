@@ -2,7 +2,7 @@
 *	LESS mixins
 */
 
-.placeholder(@rules) {
+.myPlaceholder(@rules) {
 	&::placeholder {
 		@rules();
 	}
@@ -20,7 +20,7 @@
 	}
 }
 
-.placeholderShown(@rules) {
+.myPlaceholderShown(@rules) {
 	&:placeholder-shown {
 		@rules();
 	}
@@ -38,7 +38,7 @@
 	}
 }
 
-.transition(@property, @duration, @timing: ease-out) {
+.myTransition(@property, @duration, @timing: ease-out) {
 	-webkit-transition : @property @duration @timing;
 	-moz-transition : @property @duration @timing;
 	-o-transition : @property @duration @timing;

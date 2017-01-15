@@ -17,38 +17,19 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a data-scroll href="#" tabindex="-1">sec1</a>
+						<a data-scroll href="#section-details" tabindex="-1">{{_ 'details_title'}}</a>
 					</li>
 					<li>
-						<a data-scroll href="#" tabindex="-1">sec2</a>
+						<a data-scroll href="#section-skills" tabindex="-1">{{_ 'skills_title'}}</a>
 					</li>
 					<li>
 						<a data-scroll href="#section-contact" tabindex="-1">{{_ 'contact_title'}}</a>
 					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-							{{_ 'lang'}}
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#" class="update-lang" data-lang="fr" tabindex="-1">
-									<span class="flag-icon flag-icon-fr pull-right" aria-hidden="true"></span>
-									{{_ 'french'}}
-								</a>
-							</li>
-							<li role="separator" class="divider"></li>
-							<li>
-								<a href="#" class="update-lang" data-lang="en" tabindex="-1">
-									<span class="flag-icon flag-icon-gb pull-right" aria-hidden="true"></span>
-									{{_ 'english'}}
-								</a>
-							</li>
-						</ul>
-					</li>
+					{{> update_lang}}
 				</ul>
 			</div>
 		</div>
+		<div id="progress-bar-container" class="container-fluid"></div>
 	</nav>
 
 	<!-- HEADER -->
@@ -72,7 +53,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<p id="header-scroll-wow" class="text-center wow bounce" data-wow-delay="0.5s">
-							<a class="spacer" data-scroll href="#section-contact" tabindex="-1">
+							<a class="spacer" data-scroll href="#section-details" tabindex="-1">
 								<i class="fa fa-arrow-down" aria-hidden="true"></i>
 							</a>
 						</p>
@@ -81,4 +62,28 @@
 			</div>
 		</div>
 	</header>
+</template>
+
+<template name="update_lang">
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+			{{_ 'lang'}}
+			<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#" class="update-lang" data-lang="fr" tabindex="-1">
+					<span class="flag-icon flag-icon-fr pull-right" aria-hidden="true"></span>
+					{{_ 'french'}}
+				</a>
+			</li>
+			<li role="separator" class="divider"></li>
+			<li>
+				<a href="#" class="update-lang" data-lang="en" tabindex="-1">
+					<span class="flag-icon flag-icon-gb pull-right" aria-hidden="true"></span>
+					{{_ 'english'}}
+				</a>
+			</li>
+		</ul>
+	</li>
 </template>

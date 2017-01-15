@@ -99,7 +99,7 @@ nav.navbar {
 
 	&.affix-top {
 		opacity: 0;
-		.transition(opacity, 250ms);
+		.myTransition(opacity, 250ms);
 
 		&:hover {
 			opacity: 1;
@@ -110,7 +110,7 @@ nav.navbar {
 		position: fixed;
 		opacity: 1;
 		top: 0;
-		.transition(opacity, 500ms);
+		.myTransition(opacity, 500ms);
 	}
 }
 
@@ -120,4 +120,5 @@ footer {
 	padding-bottom: 20px;
 	min-height: 200px;
 	background-color: @spaceBlueColor;
+	color: @inputLightColor;
 }
