@@ -3,12 +3,16 @@ import { check } from 'meteor/check';
 
 Meteor.methods({
 	sendEmail: function (obj) {
-		check([obj.from.name, obj.from.email, obj.content], [String]);
+		check([
+			obj.from.name,
+			obj.from.email,
+			obj.content
+		], [String]);
 		this.unblock();
 		Email.send({
-			from: obj.from.name + " <" + obj.from.email + ">",
+			from: `obj.from.name <${obj.from.email}>`,
 			to: process.env.MAIL_TO,
-			subject: "Säplltxe from " + obj.from.name,
+			subject: `[lefrantguillaume.com] Message from ${obj.from.name}`,
 			text: obj.content,
 		});
 	}

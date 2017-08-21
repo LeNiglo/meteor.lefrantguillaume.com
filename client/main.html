@@ -5,9 +5,13 @@
 
 <body>
 	{{#if or isPhone isTablet}}
-		{{> mobile_application}}
+		{{#if false}}
+			{{> mobile_application}}
+		{{else}}
+			{{> desktop_application}}
+		{{/if}}
 	{{/if}}
-	
+
 	{{#if or isDesktop isBot}}
 		{{> desktop_application}}
 	{{/if}}

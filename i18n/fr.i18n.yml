@@ -1,14 +1,75 @@
-# Header and Navbar
+# Header, Navbar and Footer
 me: Guillaume Lefrant
 me_subtitle: Développeur Web et Designer
 lang: Langue
+download_cv_pdf: CV en PDF
+download: Télécharger
+me_availability: Ma Disponibilité
+available: "Disponible  :)"
+busy: "Occupé :("
+direct_contact: Contact direct
 
 # Languages
 french: Français
 english: Anglais
 
-# Section Skills
+# Section Details
+details_title: Informations
+details_location: Adresse
+me_location: Paris 75014
+details_email: eMail
+me_email: lefrantguillaume@gmail.com
+details_phone: Téléphone
+me_phone: "+33.659698601"
+native_language: Langue maternelle
+professional_language: Capacités professionnelles complètes
 
+details_studies: Mes Études
+details_experiences: Expériences professionnelles
+
+studies_uni_kent_time: "2015 - 2016"
+studies_uni_kent_title: University of Kent (Angleterre)
+studies_uni_kent_desc: Computer and Entrepreneurship MSc (#DOUBLE CHECK#)
+
+studies_epitech_time: "2012 - 2017"
+studies_epitech_title: Epitech (Bordeaux, Paris)
+studies_epitech_desc: Master (#DOUBLE CHECK#)
+
+studies_gustave_eiffel_time: "2012"
+studies_gustave_eiffel_title: Lycée Gustave Eiffel (Bordeaux)
+studies_gustave_eiffel_desc: Baccalauréat mention Très Bien
+
+experiences_freelance_time: "2015 - actuel"
+experiences_freelance_title: Auto-entrepreneur
+experiences_freelance_desc: "J'ai été amené à travailler avec divers clients pour des missions variées. Lors de celles-ci, j'ai acquis de la responsabilité et de l'organisation."
+
+experiences_teamlearning_time: "2016 - actuel"
+experiences_teamlearning_title: Team Learning
+experiences_teamlearning_desc: "Développeur principal sur un projet de formation des nouveaux arrivant en entreprise."
+
+experiences_silkke_time: "2013 - 2015"
+experiences_silkke_title: Silkke
+experiences_silkke_desc: "Développeur FullStack et Réseaux dans une entreprise multi-culturelle portée sur la photographie 3D accessible."
+
+# Section Social
+social_linkedin: LinkedIn
+social_github: GitHub
+social_hopwork: HopWork
+
+# Section Skills
+skills_title: Compétences
+
+skill_1_title: Organisation
+skill_1_desc: "Je suis organisé. J'aime me lancer dans des projets bien réfléchis."
+
+skill_2_title: Efficace
+skill_2_desc: "Une fois le cadre posé et les problématiques en place, je suis efficace pour développer la solution désirée."
+
+skill_3_title: Méticuleux
+skill_3_desc: "Je me plais à perfectionner le produit final pour vous satisfaire au mieux."
+
+skill_4_title: Créatif
+skill_4_desc: "J'essaie de vous apporter mes avis et opinions tout en respectant votre vision du projet et ce, à tout stade du développement."
 
 # Section Contact
 contact_title: Contactez-moi
