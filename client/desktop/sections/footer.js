@@ -14,9 +14,11 @@ Template.footer.rendered = () => {
 	var tpl = Template.instance();
 	Tracker.autorun(() => {
 		tpl.availibility.get();
-		$('*[data-toggle="tooltip"]').tooltip({
-			delay: 150
-		});
+		window.setTimeout(() => {
+			$('*[data-toggle="tooltip"]').tooltip({
+				delay: 150
+			});
+		}, 500);
 	});
 };
 

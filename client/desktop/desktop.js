@@ -1,4 +1,3 @@
-if (Meteor.Device.isDesktop() || Meteor.Device.isBot())
-{
+if (Meteor.Device.isDesktop() || Meteor.Device.isBot()) {
 
 }

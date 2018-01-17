@@ -1,2 +1,115 @@
+# Header, Navbar and Footer
 me: Guillaume Lefrant
 me_subtitle: Web Developer and Designer
+lang: Language
+download_cv_pdf: CV in PDF
+download: Download
+me_availability: My Availability
+available: "Available  :)"
+busy: "Busy :("
+direct_contact: Direct contact
+
+# Languages
+french: French
+english: English
+
+# Section Details
+details_title: Details
+details_location: Address
+me_location: Paris, France
+details_email: Mail
+me_email: lefrantguillaume@gmail.com
+details_phone: Phone
+me_phone: "+33.659698601"
+native_language: Birth Language
+professional_language: Professional Usage
+
+details_studies: My Studies
+details_experiences: Professional Experiences
+
+studies:
+    gustave_eiffel_end:
+        time: "2012"
+        title: "Lycée Gustave Eiffel (Bordeaux)"
+        desc: "Baccalauréat S mention Très Bien"
+
+    epitech_start:
+        time: "2012"
+        title: "Epitech (Bordeaux)"
+        desc: "Entering the \"Piscine\", 1 month of intensive learning of C, from 9 AM to 11:42 PM. It was a great opportunity to learn the basics of programming and to bound with other students."
+
+    epitech_end:
+        time: "2017"
+        title: "Epitech (Paris)"
+        desc: "Expert in Information Technologies. Creation of an online booking platform as master project and 2 years spent in enterprises."
+
+    uni_kent_start:
+        time: "2015"
+        title: "University of Kent (Canterbury, UK)"
+        desc: "Studies in England in a big multi-cultural campus with an objective : widen my field of expertise to include business and entrepreneurship knowledge."
+
+    uni_kent_end:
+        time: "2016"
+        title: "University of Kent (Canterbury, UK)"
+        desc: "Computing and Entrepreneurship MSc. Master in 2 years, compressed in 1 year, achieved with Merits. Master Project realised in the domain of security in case of emergencies."
+
+experiences:
+    freelance:
+        time: "2015 - actuel"
+        title: Auto-entrepreneur
+        desc: "I have worked with various clients on multiple assignments. During those, I have grown up and aquiered responsibility and organisation."
+
+    webacademie:
+        time: "2017 - actuel"
+        title: "Web@cademie : Ambition Féminine"
+        desc: "Head Teacher. Use of the Epitech pedagogy to enhance self progression and adaptibility on a 2 years course. It aims to facilitate the insertion of women in the IT domain."
+
+    teamlearning:
+        time: "2016 - 2017"
+        title: Team Learning
+        desc:
+            "Responsable Technique et développeur sur un projet de formation des nouveaux arrivant en entreprise, comprenant un back-office complet et une application mobile."
+
+    wds:
+        time: "2015 - 2015"
+        title: "WineDataSystem"
+        desc: "Développeur Full Stack dans une entreprise de données viticoles. Création d'outils interne pour l'équipe marketing et développements spécifiques pour les client. Esprit start-up et bonne ambiance ont rendu ce stage très enrichissant."
+
+    silkke:
+        time: "2013 - 2015"
+        title: Silkke
+        desc: "Développeur FullStack et Réseaux dans une entreprise multi-culturelle portée sur la photographie 3D accessible."
+
+    sqli:
+        time: "2012 - 2013"
+        title: "SQLI"
+        desc: "Assistant Réseaux pour une grande SSII. J'ai également créé plusieurs outils internes pour assister les développeurs dans leurs tâches quotidiennes."
+
+# Section Social
+social_linkedin: Linkedin.com
+social_github: Github.com
+social_malt: Malt.fr
+
+# Section Skills
+skills_title: Skills
+
+skill_1_title: Organisation
+skill_1_desc: "I am organised and methodic. I like to go in thought projects."
+
+skill_2_title: Efficient
+skill_2_desc: "Once the context stated and problematics in place, I am efficient to develop the solution."
+
+skill_3_title: Meticulous
+skill_3_desc: "I enjoy perfectionning the final product to ensure it fit your needs."
+
+skill_4_title: Créatif
+skill_4_desc: "I try to give you a piece of advice while respecting your project's vision, any time during the development."
+
+# Section Contact
+contact_title: Contact me
+contact_name: Name
+contact_email: Mail
+contact_content: Content
+contact_submit: Send
+contact_success: Your message has been sent successfully, I will be in touch as soon as possible.
+contact_fail: "An error occured during processing. Please retry or contact me directly at lefrantguillaume@gmail.com."
