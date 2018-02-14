@@ -4,15 +4,19 @@
 </head>
 
 <body>
-	{{#if or isPhone isTablet}}
-		{{#if false}}
-			{{> mobile_application}}
-		{{else}}
-			{{> desktop_application}}
-		{{/if}}
-	{{/if}}
+	{{> header}}
 
-	{{#if or isDesktop isBot}}
-		{{> desktop_application}}
-	{{/if}}
+	{{> section_details}}
+
+	{{> section_social}}
+
+	{{> section_skills}}
+
+	<!-- TODO => Simple Responsive Timeline -->
+	<!-- http://freefrontend.com/css-timelines -->
+	<!-- https://codepen.io/brady_wright/pen/NNOvrW  -->
+
+	{{> section_contact}}
+
+	{{> footer}}
 </body>
