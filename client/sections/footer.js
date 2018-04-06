@@ -23,8 +23,7 @@ Template.footer.rendered = () => {
 };
 
 Template.footer.helpers({
-	getAvailability: (output) => {
-		output = output || true;
-		return Template.instance().availibility.get() ? output : ouput === true ? false : null;
+	getAvailability: () => {
+		return Template.instance().availibility.get();
 	}
 });
