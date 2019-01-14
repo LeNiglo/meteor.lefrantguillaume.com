@@ -10,8 +10,8 @@ fi
 sudo meteor --allow-superuser build --server-only /home/$APP_NAME/.
 cd /home/$APP_NAME/
 sudo rm -rf bundle/
-sudo tar -xzf beta.$APP_NAME.com.tar.gz
-sudo rm -f beta.$APP_NAME.com.tar.gz
+sudo tar -xzf $APP_NAME.com.tar.gz
+sudo rm -f $APP_NAME.com.tar.gz
 cd bundle/programs/server/
 sudo npm install --production
 sudo chown $APP_NAME:leniglo -R /home/$APP_NAME
